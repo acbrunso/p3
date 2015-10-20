@@ -1,0 +1,95 @@
+
+#main {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+#header {
+  font-size: 3vw;
+  float: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border: 10px solid black;
+  border-radius: 40px;
+
+}
+
+#nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+#section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 20px;
+  /*text-align: center;*/
+  background-color: #FFFFFF;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+  width: auto\9;
+}
+
+label {
+
+  font-size: 2vw;
+  background-color: grey;
+  border-radius: 5px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  display: inline;
+
+}
+
+.top a:hover, .top a:visited:hover {
+    background-color: #3388FF;
+}
+
+.top a:link, .top a:visited {
+    width: 60px;
+    font-weight: bold;
+    color: #001F4C;
+    background-color: lightblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    text-transform: uppercase;
+
+}
+
+.body2 a:hover, .body2 a:visited:hover {
+}
+
+.body2 a:link, .body2 a:visited {
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #001F4C;
+}
