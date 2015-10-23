@@ -38,7 +38,11 @@ class LoremIpsumController extends Controller
      */
     public function store(Request $request)
     {
-      
+      $this->validate($request, [
+        'numOfParagraphs' => 'numeric|required|max:20',
+        ]
+      );
+
       return View('LoremIpsumView', ['request' => $request]);
     }
 

@@ -4,7 +4,8 @@
 {!! Form::open() !!}
   <?php
   isset($request->numOfParagraphs) ? $n=$request->numOfParagraphs : $n=1;
-  echo Form::selectRange('numOfParagraphs', 1, 20,  $n) . "   ";
+  //echo Form::selectRange('numOfParagraphs', 1, 20,  $n) . "   ";
+  echo Form::text('numOfParagraphs', $n);
   echo Form::label('lNumOfParagraphs', 'Number of Paragraphs');
   echo '<br><br>';
   echo Form::submit('Submit');
@@ -13,11 +14,32 @@
 
 
 <p>
-  @if(isset($request->numOfParagraphs))
+  @if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+  @else
     <?php
       $generator = new Badcow\LoremIpsum\Generator();
       $paragraphs = $generator->getParagraphs($request->numOfParagraphs);
       echo implode('<p>', $paragraphs);
+    ?>
+  @endif
+
+
+
+
+
+  @if(isset($request->numOfParagraphs))
+    <?php/*
+      $generator = new Badcow\LoremIpsum\Generator();
+      $paragraphs = $generator->getParagraphs($request->numOfParagraphs);
+      echo implode('<p>', $paragraphs);
+      */
     ?>
   @endif
 </p>
