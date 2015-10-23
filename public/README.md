@@ -5,7 +5,7 @@
 <http://p3.anthonybrunson.me>
 
 ## Screencast link
-<http://screencast.com/t/t2wJglgp710>
+<http://screencast.com/t/silrTpGs>
 
 ## Description
 This is project  which is used to allow users to generate either lorem
