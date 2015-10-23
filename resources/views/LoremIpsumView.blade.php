@@ -23,11 +23,15 @@
         </ul>
     </div>
   @else
+    @if(isset($request->numOfParagraphs))
+
     <?php
       $generator = new Badcow\LoremIpsum\Generator();
       $paragraphs = $generator->getParagraphs($request->numOfParagraphs);
       echo implode('<p>', $paragraphs);
     ?>
+    @endif
+
   @endif
 
 
