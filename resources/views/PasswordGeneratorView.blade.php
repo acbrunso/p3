@@ -19,7 +19,7 @@
     {!! Form::open() !!}
     <?php
       isset($request->numOfWords) ? $n=$request->numOfWords : $n=1;
-      echo Form::selectRange('numOfWords', 1, 3,  $n) . "   ";
+      echo Form::selectRange('numOfWords', 1, 3,  $n, ['id'=>'numOfWords']) . "   ";
       echo Form::label('numOfWords', 'Number of Words');
       echo '<br><br>';
 
