@@ -6,6 +6,33 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
+10/21/2015
+# CSCI E-15 Dynamic Web Design
+
+## Live URL
+<http://p3.anthonybrunson.me>
+
+## Screencast link
+<http://screencast.com/t/silrTpGs>
+
+## Description
+This is project  which is used to allow users to generate either lorem
+ipsum paragraphs, fake profiles, and select an xkdc style random password.  
+
+## Details for teaching team
+No login required
+I added the xkdc password generator as an extra challenge for the extra
+points.
+
+## Outside code
+I used the badcow/lorem-ipsum package for the lorem-ipsum page.
+I used the fzaninotto/faker package for the profiles, and the
+password is generated from the wisdom of xkcd.
+
+##Other details worth noting
+I generated a template style
+navigation system so that files can be reused if necessary.
+
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
 
 Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
