@@ -24,12 +24,12 @@
       echo '<br><br>';
 
       isset($request->numOfChars) ? $n=$request->numOfChars : $n=0;
-      echo Form::selectRange('numOfChars', 0, 3,  $n) . "   ";
+      echo Form::selectRange('numOfChars', 0, 3,  $n, ['id'=>'numOfChars']) . "   ";
       echo Form::label('numOfChars', 'Number of Characters');
       echo '<br><br>';
 
       isset($request->numOfNums) ? $n=$request->numOfNums : $n=0;
-      echo Form::selectRange('numOfNums', 0, 3,  $n) . "   ";
+      echo Form::selectRange('numOfNums', 0, 3,  $n, ['id'=>'numOfNums']) . "   ";
       echo Form::label('numOfNums', 'Number of Nums');
       echo '<br><br>';
       echo Form::submit('Submit');

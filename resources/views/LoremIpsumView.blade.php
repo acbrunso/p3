@@ -5,7 +5,7 @@
   <?php
   isset($request->numOfParagraphs) ? $n=$request->numOfParagraphs : $n=1;
   //echo Form::selectRange('numOfParagraphs', 1, 20,  $n) . "   ";
-  echo Form::text('numOfParagraphs', $n);
+  echo Form::text('numOfParagraphs', $n, ['id'=>'numOfParagraphs']);
   echo Form::label('numOfParagraphs', 'Number of Paragraphs');
   echo '<br><br>';
   echo Form::submit('Submit');
