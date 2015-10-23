@@ -6,7 +6,7 @@
   isset($request->numOfParagraphs) ? $n=$request->numOfParagraphs : $n=1;
   //echo Form::selectRange('numOfParagraphs', 1, 20,  $n) . "   ";
   echo Form::text('numOfParagraphs', $n);
-  echo Form::label('lNumOfParagraphs', 'Number of Paragraphs');
+  echo Form::label('numOfParagraphs', 'Number of Paragraphs');
   echo '<br><br>';
   echo Form::submit('Submit');
   ?>
@@ -24,7 +24,6 @@
     </div>
   @else
     @if(isset($request->numOfParagraphs))
-
     <?php
       $generator = new Badcow\LoremIpsum\Generator();
       $paragraphs = $generator->getParagraphs($request->numOfParagraphs);

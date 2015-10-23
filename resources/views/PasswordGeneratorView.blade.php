@@ -20,17 +20,17 @@
     <?php
       isset($request->numOfWords) ? $n=$request->numOfWords : $n=1;
       echo Form::selectRange('numOfWords', 1, 3,  $n) . "   ";
-      echo Form::label('lNumOfWords', 'Number of Words');
+      echo Form::label('numOfWords', 'Number of Words');
       echo '<br><br>';
 
       isset($request->numOfChars) ? $n=$request->numOfChars : $n=0;
       echo Form::selectRange('numOfChars', 0, 3,  $n) . "   ";
-      echo Form::label('lNumOfChars', 'Number of Characters');
+      echo Form::label('numOfChars', 'Number of Characters');
       echo '<br><br>';
 
       isset($request->numOfNums) ? $n=$request->numOfNums : $n=0;
       echo Form::selectRange('numOfNums', 0, 3,  $n) . "   ";
-      echo Form::label('lNumOfNums', 'Number of Nums');
+      echo Form::label('numOfNums', 'Number of Nums');
       echo '<br><br>';
       echo Form::submit('Submit');
       ?>

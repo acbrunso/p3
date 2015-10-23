@@ -6,19 +6,19 @@
 
   isset($request->numOfUsers) ? $n=$request->numOfUsers : $n=1;
   echo Form::selectRange('numOfUsers', 1, 20,  $n) . "   ";
-  echo Form::label('lNumOfUsers', 'Number of Users');
+  echo Form::label('numOfUsers', 'Number of Users');
   echo '<br><br>';
   isset($request->birthdate) ? $selected=true : $selected=false;
 	echo Form::checkbox('birthdate', 'birthdate', $selected);
-  echo Form::label('lBirthdate', 'Birthdate');
+  echo Form::label('birthdate', 'Birthdate');
   echo '<br>';
   isset($request->address) ? $selected=true : $selected=false;
   echo Form::checkbox('address', 'address', $selected);
-  echo Form::label('lAddress', 'Address');
+  echo Form::label('address', 'Address');
   echo '<br>';
   isset($request->profile) ? $selected=true : $selected=false;
   echo Form::checkbox('profile', 'profile', $selected);
-  echo Form::label('lProfile', 'Profile');
+  echo Form::label('profile', 'Profile');
   echo '<br><br>';
   	echo Form::submit('Submit');
   ?>
